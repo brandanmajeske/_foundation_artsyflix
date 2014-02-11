@@ -1,0 +1,41 @@
+//Variable Definitions //
+
+$purple: #4D386E;
+$transPurple: rgba(77,56,110,0.5);
+$rowPurple: #544770;
+$grey: #5C5673;
+$white: #FFFFFF;
+$dkgrey: #4A4A4A;
+$ltgrey: #F6F6F6;
+$orange: #fcb13a; //was #F2BD67;
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	color: $dkgrey;
+	background-color: $grey;
+	overflow: auto;
+}
+
+.wrapper {
+	max-width: 1050px;
+	margin: 0 auto;
+	background-color: $transPurple;
+}
+
+.row {
+ 	background-color: white;
+}
+
+@import "header";
+
+@import "slider";
+
+@import "sidebar-left";
+
+@import "sidebar-right";
+
+@import "main-content";

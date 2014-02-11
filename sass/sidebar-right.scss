@@ -1,0 +1,52 @@
+.sidebar-right {
+	border-top: 1px solid darken($ltgrey, 10%);
+
+	h4 {
+		text-transform: uppercase;		
+		span.first-word {
+		color: $orange
+		}
+	}
+
+	.social {
+		
+		ul {
+
+			li {
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			position: relative;
+			}	
+		
+		img {
+			position: absolute;
+			overflow: auto;
+			transition: opacity 0.3s ease;
+			
+			top: 0;
+		
+			&:hover {
+				top: -25px;
+			}
+		}
+
+		
+		}
+
+	}
+
+	.cart {
+		p {
+			font-size: .75em;
+			font-style: italic;
+		}
+	}
+
+	#contact {
+		display: block;
+		padding: 20px;
+		background-color: $orange;
+		color: darken($orange, 20%);
+	}
+}

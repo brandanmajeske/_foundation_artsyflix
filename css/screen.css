@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4a4a;
+  background-color: #5c5673;
+  overflow: auto; }
+
+.wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+  background-color: rgba(77, 56, 110, 0.5); }
+
+.row {
+  background-color: white; }
+
+.header {
+  padding-top: 1.5em; }
+  .header .large-3.columns, .header .large-9.columns {
+    padding: 0px !important; }
+  .header .row {
+    background-color: #544770; }
+  .header ul li a {
+    color: white;
+    transition: color 0.3s ease; }
+    .header ul li a:hover {
+      color: #cccccc; }
+  .header .user-menu li a {
+    font-size: .75em; }
+  .header .main-menu li a {
+    text-transform: uppercase;
+    margin-left: 1em;
+    margin-top: 2em; }
+
+#slider .orbit {
+  border-top: 2px solid #fcb13a; }
+
+.sidebar-menu {
+  padding: 0;
+  border-top: 1px solid #dddddd; }
+  .sidebar-menu dl dd.active a {
+    background-color: #fcb13a;
+    color: #cd7f03;
+    border-top: 1px solid #cd7f03;
+    border-bottom: 1px solid #cd7f03; }
+  .sidebar-menu dd a {
+    transition: all 0.2s ease; }
+    .sidebar-menu dd a a:hover {
+      background-color: #fcb13a; }
+  .sidebar-menu .customer-feedback {
+    padding: 1em;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    background-color: #f6f6f6; }
+    .sidebar-menu .customer-feedback h4 {
+      font-size: 0.75em;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .sidebar-menu .customer-feedback p {
+      font-size: .75em;
+      font-style: italic; }
+
+.sidebar-right {
+  border-top: 1px solid #dddddd; }
+  .sidebar-right h4 {
+    text-transform: uppercase; }
+    .sidebar-right h4 span.first-word {
+      color: #fcb13a; }
+  .sidebar-right .social ul li {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: relative; }
+  .sidebar-right .social ul img {
+    position: absolute;
+    overflow: auto;
+    transition: opacity 0.3s ease;
+    top: 0; }
+    .sidebar-right .social ul img:hover {
+      top: -25px; }
+  .sidebar-right .cart p {
+    font-size: .75em;
+    font-style: italic; }
+  .sidebar-right #contact {
+    display: block;
+    padding: 20px;
+    background-color: #fcb13a;
+    color: #cd7f03; }
+
+.main-content {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  background-color: white;
+  padding-top: 1em; }
+  .main-content .featured-title img {
+    float: left;
+    margin-right: 1em; }
+  .main-content .panel {
+    background-color: white;
+    color: #4a4a4a; }

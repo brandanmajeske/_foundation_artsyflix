@@ -1,0 +1,37 @@
+
+.header {
+	padding-top: 1.5em;
+	
+	.large-3.columns,  .large-9.columns  {
+			padding: 0px!important;		
+	}
+
+	.row {
+		background-color: $rowPurple;
+			
+
+	}
+	
+	
+	ul li a {
+		color: $white;
+		transition: color 0.3s ease;
+	
+
+		&:hover {
+			color: darken($white, 20%);
+		}
+	}
+
+	.user-menu li a {
+		font-size: .75em;
+	}
+
+	.main-menu li a {
+		text-transform: uppercase;
+		margin-left: 1em;
+		margin-top: 2em;
+	}
+
+
+}

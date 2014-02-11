@@ -1,0 +1,19 @@
+.main-content {
+	border: 1px solid darken($ltgrey, 10%);
+	border-bottom: none;
+	background-color: lighten($ltgrey, 10%);
+
+	padding-top: 1em;
+
+	.featured-title {
+		img {
+			float:left;
+			margin-right: 1em;
+		}
+	}
+
+	.panel {
+		background-color: lighten($ltgrey, 25%);
+		color: $dkgrey;
+	}
+}
