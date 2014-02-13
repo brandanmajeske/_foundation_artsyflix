@@ -2,19 +2,23 @@
 body, html {
   font-family: 'Open Sans', sans-serif;
   color: #4a4a4a;
-  background-color: #5c5673;
-  overflow: auto; }
+  background-color: #5c5673; }
 
 .wrapper {
-  max-width: 1050px;
+  max-width: 1100px;
   margin: 0 auto;
   background-color: rgba(77, 56, 110, 0.5); }
 
 .row {
   background-color: white; }
 
+a {
+  color: #fbae38; }
+  a:hover {
+    color: #fa9a06; }
+
 .header {
-  padding-top: 1.5em; }
+  padding-top: 0.5em; }
   .header .large-3.columns, .header .large-9.columns {
     padding: 0px !important; }
   .header .row {
@@ -26,26 +30,62 @@ body, html {
       color: #cccccc; }
   .header .user-menu li a {
     font-size: .75em; }
-  .header .main-menu li a {
-    text-transform: uppercase;
-    margin-left: 1em;
-    margin-top: 2em; }
+  .header #cart {
+    width: 4em;
+    text-align: right;
+    background: url("../img/cart.png") no-repeat left center;
+    background-size: 20px 14px; }
+  .header .main-menu {
+    margin-top: 1em; }
+    .header .main-menu li {
+      margin-left: .25em; }
+      .header .main-menu li a {
+        text-transform: uppercase;
+        font-size: .80em;
+        padding: 5px; }
+        .header .main-menu li a:hover {
+          background-color: rgba(153, 128, 191, 0.5);
+          color: #fbae38; }
+  .header input[id=search] {
+    border: 1px solid rgba(101, 73, 144, 0.5);
+    padding: 5px;
+    color: white;
+    background: rgba(77, 56, 110, 0.5);
+    background: url("../img/search.png") no-repeat right 5px center, rgba(77, 56, 110, 0.5); }
+    .header input[id=search]:focus {
+      outline-color: white; }
+  .header #header-logo {
+    max-height: 3.125em; }
 
 #slider .orbit {
-  border-top: 2px solid #fcb13a; }
+  margin-bottom: 1em; }
+  #slider .orbit img {
+    border-top: 2px solid #fbae38;
+    border-bottom: 2px solid #fbae38; }
 
 .sidebar-menu {
   padding: 0;
   border-top: 1px solid #dddddd; }
+  .sidebar-menu .sidebar-logo {
+    padding: 0.5em;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #b6b6b6; }
+    .sidebar-menu .sidebar-logo img {
+      width: 65%; }
+  .sidebar-menu dl dd {
+    background-colr: #f6f6f6; }
+    .sidebar-menu dl dd a {
+      transition: all 0.2s ease;
+      border-bottom: 1px solid #b6b6b6; }
+    .sidebar-menu dl dd a:hover {
+      background-color: #fbae38; }
+  .sidebar-menu dl dd a:hover {
+    background-color: #fbae38;
+    border-bottom: 1px solid #c97b04; }
   .sidebar-menu dl dd.active a {
-    background-color: #fcb13a;
-    color: #cd7f03;
-    border-top: 1px solid #cd7f03;
-    border-bottom: 1px solid #cd7f03; }
-  .sidebar-menu dd a {
-    transition: all 0.2s ease; }
-    .sidebar-menu dd a a:hover {
-      background-color: #fcb13a; }
+    background-color: #fbae38;
+    color: #c97b04;
+    border-bottom: 1px solid #c97b04; }
   .sidebar-menu .customer-feedback {
     padding: 1em;
     border-top: 1px solid #dddddd;
@@ -64,7 +104,7 @@ body, html {
   .sidebar-right h4 {
     text-transform: uppercase; }
     .sidebar-right h4 span.first-word {
-      color: #fcb13a; }
+      color: #fbae38; }
   .sidebar-right .social ul li {
     display: inline-block;
     width: 25px;
@@ -83,8 +123,18 @@ body, html {
   .sidebar-right #contact {
     display: block;
     padding: 20px;
-    background-color: #fcb13a;
-    color: #cd7f03; }
+    background-color: #f6f6f6;
+    color: #0a0a0a;
+    border-top: 1px solid #b6b6b6;
+    border-bottom: 1px solid #b6b6b6;
+    transition: all 0.3s ease; }
+    .sidebar-right #contact:hover {
+      background-color: #fbae38;
+      color: #0a0a0a;
+      border-top: 1px solid #b06c04;
+      border-bottom: 1px solid #b06c04; }
+    .sidebar-right #contact:active {
+      color: #b06c04; }
 
 .main-content {
   border: 1px solid #dddddd;
@@ -93,11 +143,23 @@ body, html {
   padding-top: 1em; }
   .main-content .featured-title img {
     float: left;
-    margin-right: 1em; }
+    margin-right: 1em;
+    margin-bottom: 0.5em; }
   .main-content .panel {
+    clear: both;
     background-color: white;
     color: #4a4a4a; }
 
 .secondary-menu .panel {
   background-color: white;
   color: #4a4a4a; }
+
+.secondary-footer {
+  background-color: #f6f6f6;
+  border-top: 1px solid #b6b6b6; }
+  .secondary-footer .row {
+    background-color: #f6f6f6; }
+    .secondary-footer .row p {
+      margin-top: 1em;
+      font-size: 0.75rem;
+      text-align: center; }

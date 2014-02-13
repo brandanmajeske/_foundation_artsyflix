@@ -9,10 +9,12 @@
 		img {
 			float:left;
 			margin-right: 1em;
+			margin-bottom: 0.5em;
 		}
 	}
 
 	.panel {
+		clear: both;
 		background-color: lighten($ltgrey, 25%);
 		color: $dkgrey;
 	}

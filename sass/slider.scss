@@ -1,7 +1,13 @@
 #slider {
 
  .orbit {
-	border-top: 2px solid $orange;	
+	
+	margin-bottom: 1em;	
+	
+	img {
+			border-top: 2px solid $orange;
+			border-bottom: 2px solid $orange;
+		}
 	}
 
 } // end slider

@@ -1,0 +1,14 @@
+.secondary-footer {
+	background-color: $ltgrey;
+	border-top: 1px solid darken($ltgrey, 25%);
+
+	.row {
+		background-color: $ltgrey;
+		
+		p {
+			margin-top: 1em;
+			font-size: 0.75rem;
+			text-align: center;
+		}
+	}
+}

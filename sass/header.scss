@@ -1,7 +1,7 @@
 
 .header {
-	padding-top: 1.5em;
-	
+	padding-top: 0.5em;
+
 	.large-3.columns,  .large-9.columns  {
 			padding: 0px!important;		
 	}
@@ -27,11 +27,50 @@
 		font-size: .75em;
 	}
 
-	.main-menu li a {
-		text-transform: uppercase;
-		margin-left: 1em;
-		margin-top: 2em;
+	#cart {
+		width: 4em;
+		text-align: right;
+		background: url('../img/cart.png') no-repeat left center;
+		background-size: 20px 14px;
+	}
+
+	.main-menu {
+		margin-top: 1em;
+		li {
+				margin-left: .25em;
+				
+			a {
+				text-transform: uppercase;
+				font-size: .80em;
+				padding: 5px;
+
+				&:hover {
+					background-color: lighten($transPurple, 30%);
+					color: $orange;
+
+				}
+			}
+		}
 	}
 
 
+
+	input[id=search] {
+	border: 1px solid lighten($transPurple, 10%);
+	padding: 5px;
+	color: $white;
+	background: $transPurple;
+	background: 
+		url('../img/search.png') no-repeat right 5px center,
+		$transPurple;
+
+	&:focus {
+		outline-color: $white;
+	}
+	}
+
+	#header-logo {
+		max-height: 3.125em;
+	}
 }
+

@@ -2,22 +2,45 @@
 	padding: 0;
 	border-top: 1px solid darken($ltgrey, 10%);
 
-	dl dd.active a {
-		background-color: $orange;
-		color: darken($orange, 20%);
-		border-top: 1px solid darken($orange,20%);
-		border-bottom: 1px solid darken($orange,20%);
-	}
+	.sidebar-logo {
+		padding: 0.5em;
+		background-color: $ltgrey;
+		border-bottom: 1px solid darken($ltgrey, 25%);
 
-	dd a{
-
-		transition: all 0.2s ease;
-
-		a:hover {
-			background-color: $orange;
+		img {
+			width: 65%;
 		}
 
 	}
+
+
+	dl dd {
+		background-colr: $ltgrey;
+		
+		a {
+			transition: all 0.2s ease;
+			border-bottom: 1px solid darken($ltgrey, 25%);
+		}
+		a:hover {
+			background-color: $orange;
+		}
+	}
+
+	dl dd a:hover {
+		background-color: $orange;
+		//color: darken($orange, 20%);
+		//border-top: 1px solid darken($orange,20%);
+		border-bottom: 1px solid darken($orange,20%);
+	}
+
+
+	dl dd.active a {
+		background-color: $orange;
+		color: darken($orange, 20%);
+		//border-top: 1px solid darken($orange,20%);
+		border-bottom: 1px solid darken($orange,20%);
+	}
+
 
 	.customer-feedback {
 	
