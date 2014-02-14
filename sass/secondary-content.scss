@@ -1,0 +1,57 @@
+.secondary-content {
+
+	border: 1px solid darken($ltgrey, 10%);
+	border-bottom: none;
+	background-color: lighten($ltgrey, 10%);
+
+	.breadcrumbs {
+		border:none;
+		background-color: $ltgrey;
+		border-bottom: 1px solid darken($ltgrey, 5%);
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+
+		a {
+			color: $orange;
+		}
+
+		li.current a {
+			color: $transPurple;
+		}
+	}
+
+	.featured-title {
+		img {
+			float:left;
+			margin-right: 1em;
+			margin-bottom: 0.5em;
+		}
+	}
+
+	.panel {
+		clear: both;
+		background-color: lighten($ltgrey, 25%);
+		color: $dkgrey;
+	}
+
+	.secondary-feature-orbit {
+
+			li {
+
+				img {
+					float: left;
+					margin: .5em;
+				}
+				p {
+					max-width: 95%;
+				}
+
+			}
+	}
+
+
+		.orbit-next, .orbit-prev {
+			opacity: 0.4;
+		}
+
+}

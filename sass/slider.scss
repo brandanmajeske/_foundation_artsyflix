@@ -11,3 +11,37 @@
 	}
 
 } // end slider
+
+#secondary-slider {
+	display: block;
+	height: 6.5em;
+	background-color: $ltgrey;
+	margin: 0 auto;
+
+
+	.video-list  {
+		margin: 0 auto;
+		width: 98%;
+		text-align: center;
+		display: block;
+		padding: 1em;
+
+		li {
+			display: inline-block;	
+			text-align: center;
+			margin-left: 2em;
+			img {
+				display: inline-block;
+				width: 100%;
+				margin: 0 auto;	
+			}
+		}
+	}
+
+}
+
+.orbit-next, .orbit-prev {
+	background-color: $transPurple;
+	opacity: 0.4;
+	transition: opacity 0.3s ease;
+}

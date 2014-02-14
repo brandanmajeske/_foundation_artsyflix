@@ -2,7 +2,7 @@
 
 $purple: #4D386E;
 $transPurple: rgba(77,56,110,0.5);
-$rowPurple: #544770;
+$rowPurple: #4E3C6F; // was #544770;
 $grey: #5C5673;
 $white: #FFFFFF;
 $dkgrey: #4A4A4A;
@@ -47,6 +47,8 @@ a {
 @import "sidebar-right";
 
 @import "main-content";
+
+@import "secondary-content";
 
 @import "secondary";
 

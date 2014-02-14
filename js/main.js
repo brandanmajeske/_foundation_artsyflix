@@ -60,4 +60,21 @@ $(function () {
   });
 }); // end back-to-top
 
+console.log($('#secondary-slider'));
 
+$("#secondary-slider").on("ready.fndtn.orbit", function(event) {
+  console.info("ready");
+});
+$("#secondary-slider").on("before-slide-change.fndtn.orbit", function(event) {
+  console.info("before slide change");
+});
+$("#secondary-slider").on("after-slide-change.fndtn.orbit", function(event, orbit) {
+  console.info("after slide change");
+  console.info("slide " + orbit.slide_number + " of " + orbit.total_slides);
+});
+$("#secondary-slider").on("timer-started.fndtn.orbit", function(event, orbit) {
+  console.info("timer started");
+});
+$("#secondary-slider").on("timer-stopped.fndtn.orbit", function(event, orbit) {
+  console.info("timer stopped");
+});
