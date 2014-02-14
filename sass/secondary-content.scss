@@ -12,11 +12,16 @@
 		border-radius: 0px;
 
 		a {
-			color: $orange;
+			transition: color 0.3s ease;
+			color: $purple;
+			
+			&:hover {
+				color: $orange;
+			}
 		}
 
 		li.current a {
-			color: $transPurple;
+			color: $orange;
 		}
 	}
 
@@ -35,6 +40,11 @@
 	}
 
 	.secondary-feature-orbit {
+		background-color: $ltgrey;
+		padding: 0;
+		margin: 0;
+		overflow: visible;
+		border: 1px solid darken($ltgrey, 10%);
 
 			li {
 
@@ -53,5 +63,12 @@
 		.orbit-next, .orbit-prev {
 			opacity: 0.4;
 		}
+
+	.category h4 {
+		text-transform: uppercase;
+		color: $orange;
+		font-size: 1.2em;
+		margin: .5em 0;
+	}
 
 }

@@ -33,8 +33,11 @@ a {
   .header #cart {
     width: 4em;
     text-align: right;
-    background: url("../img/cart.png") no-repeat left center;
-    background-size: 20px 14px; }
+    background: url("../img/cart.svg") no-repeat left center;
+    background-size: 20px 20px; }
+    .header #cart:hover {
+      background: url("../img/cart-hover.svg") no-repeat left center;
+      background-size: 20px 20px; }
   .header .main-menu {
     margin-top: 1em; }
     .header .main-menu li {
@@ -130,7 +133,7 @@ input[id=search] {
     border-bottom: 1px solid #c97b04; }
   .sidebar-menu dl dd.active a {
     background-color: #fbae38;
-    color: #c97b04;
+    color: #7e4d03;
     border-bottom: 1px solid #c97b04; }
   .sidebar-menu .customer-feedback {
     padding: 1em;
@@ -207,9 +210,12 @@ input[id=search] {
     -webkit-border-radius: 0px;
     border-radius: 0px; }
     .secondary-content .breadcrumbs a {
-      color: #fbae38; }
+      transition: color 0.3s ease;
+      color: #4d386e; }
+      .secondary-content .breadcrumbs a:hover {
+        color: #fbae38; }
     .secondary-content .breadcrumbs li.current a {
-      color: rgba(77, 56, 110, 0.5); }
+      color: #fbae38; }
   .secondary-content .featured-title img {
     float: left;
     margin-right: 1em;
@@ -218,13 +224,24 @@ input[id=search] {
     clear: both;
     background-color: white;
     color: #4a4a4a; }
-  .secondary-content .secondary-feature-orbit li img {
-    float: left;
-    margin: .5em; }
-  .secondary-content .secondary-feature-orbit li p {
-    max-width: 95%; }
+  .secondary-content .secondary-feature-orbit {
+    background-color: #f6f6f6;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    border: 1px solid #dddddd; }
+    .secondary-content .secondary-feature-orbit li img {
+      float: left;
+      margin: .5em; }
+    .secondary-content .secondary-feature-orbit li p {
+      max-width: 95%; }
   .secondary-content .orbit-next, .secondary-content .orbit-prev {
     opacity: 0.4; }
+  .secondary-content .category h4 {
+    text-transform: uppercase;
+    color: #fbae38;
+    font-size: 1.2em;
+    margin: .5em 0; }
 
 .secondary-menu .panel {
   background-color: white;

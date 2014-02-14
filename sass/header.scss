@@ -29,8 +29,13 @@
 	#cart {
 		width: 4em;
 		text-align: right;
-		background: url('../img/cart.png') no-repeat left center;
-		background-size: 20px 14px;
+		background: url('../img/cart.svg') no-repeat left center;
+		background-size: 20px 20px;
+
+		&:hover {
+			background: url('../img/cart-hover.svg') no-repeat left center;
+			background-size: 20px 20px;
+		}
 	}
 
 	.main-menu {
